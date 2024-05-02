@@ -24,6 +24,7 @@ const Footer = () => {
                             @pawlytics
                         </Link>
                     </p>
+                    <p className="text-black px-40 font-neucha font-bold">Made by Shivam Dave</p>
                     
                     {/* media icon  */}
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
