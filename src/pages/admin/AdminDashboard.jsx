@@ -117,7 +117,7 @@ const AdminDashboard = () => {
                                         </svg>
                                     </div>
                                     <h2 className="title-font font-medium text-3xl text-pink-400 fonts1" >{getAllOrder.length}</h2>
-                                    <p className=" text-pink-500  font-bold" >Total Order</p>
+                                    <p className=" text-pink-500  font-bold" >Total Orders</p>
                                 </div>
                             </Tab>
 
@@ -145,7 +145,7 @@ const AdminDashboard = () => {
 
                                     </div>
                                     <h2 className="title-font font-medium text-3xl text-pink-400 fonts1" >{getAllUser.length}</h2>
-                                    <p className=" text-pink-500  font-bold" >Total User</p>
+                                    <p className=" text-pink-500  font-bold" >Total Users</p>
                                 </div>
                             </Tab>
                         </TabList>
