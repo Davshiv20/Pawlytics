@@ -4,23 +4,24 @@ const Footer = () => {
     return (
         <div>
             {/* footer  */}
-            <footer className="text-gray-600 body-font bg-pink-600">
+            <footer className="text-gray-600 body-font bg-gradient-to-l  from-red-800 to-purple-800 sticky top-0">
                 {/* main  */}
                 <div className="container px-5 py-5 mx-auto flex items-center sm:flex-row flex-col">
                     {/* logo  */}
-                    <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-                        <span className="text-xl font-bold">E-bharat</span>
+                    <img src="../img/logo.png" style={{width:"50px"}}/>
+                    <a className="flex title-font font-medium items-center font-neucha md:justify-start justify-center text-black">
+                        <span className="text-xl px-3 font-bold">Pawlytics</span>
                     </a>
                     {/* para  */}
                     <p className="text-sm text-gray-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-                        © 2024 ebharat —
+                        © 2024 pawlytics —
                         <Link
                         to={'/'}
                             className="text-gray-100 ml-1"
                             rel="noopener noreferrer"
                             target="_blank"
                         >
-                            @ebharat
+                            @pawlytics
                         </Link>
                     </p>
                     

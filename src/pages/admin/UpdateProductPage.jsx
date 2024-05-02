@@ -8,28 +8,28 @@ import Loader from "../../components/loader/Loader";
 
 const categoryList = [
     {
-        name: 'fashion'
+        name: 'pet'
     },
     {
-        name: 'shirt'
+        name: 'cat'
     },
     {
-        name: 'jacket'
+        name: 'dog'
     },
     {
-        name: 'mobile'
+        name: 'bird'
     },
     {
-        name: 'laptop'
+        name: 'rabbit'
     },
     {
-        name: 'shoes'
+        name: 'fish'
     },
     {
-        name: 'home'
+        name: 'turtle'
     },
     {
-        name: 'books'
+        name: 'hamster'
     }
 ]
 
@@ -86,8 +86,8 @@ const UpdateProductPage = () => {
         setLoading(true)
         try {
 
-            await setDoc(doc(fireDB, 'products', id), product)
-            toast.success("Product Updated successfully")
+            await setDoc(doc(fireDB, 'pets', id), product)
+            toast.success("Pet Updated successfully")
             getAllProductFunction();
             setLoading(false)
             navigate('/admin-dashboard')
@@ -111,7 +111,7 @@ const UpdateProductPage = () => {
                     {/* Top Heading  */}
                     <div className="mb-5">
                         <h2 className='text-center text-2xl font-bold text-pink-500 '>
-                            Update Product
+                            Update Pet
                         </h2>
                     </div>
 
@@ -127,7 +127,7 @@ const UpdateProductPage = () => {
                                     title: e.target.value
                                 })
                             }}
-                            placeholder='Product Title'
+                            placeholder='Pet Name'
                             className='bg-pink-50 border text-pink-300 border-pink-200 px-2 py-2 w-96 rounded-md outline-none placeholder-pink-300'
                         />
                     </div>
@@ -144,7 +144,7 @@ const UpdateProductPage = () => {
                                     price: e.target.value
                                 })
                             }}
-                            placeholder='Product Price'
+                            placeholder='Pet Price'
                             className='bg-pink-50 border text-pink-300 border-pink-200 px-2 py-2 w-96 rounded-md outline-none placeholder-pink-300'
                         />
                     </div>
@@ -161,7 +161,7 @@ const UpdateProductPage = () => {
                                     productImageUrl: e.target.value
                                 })
                             }}
-                            placeholder='Product Image Url'
+                            placeholder='Pet Image Url'
                             className='bg-pink-50 border text-pink-300 border-pink-200 px-2 py-2 w-96 rounded-md outline-none placeholder-pink-300'
                         />
                     </div>
@@ -196,7 +196,7 @@ const UpdateProductPage = () => {
                                     ...product,
                                     description: e.target.value
                                 })
-                            }} name="description" placeholder="Product Description" rows="5" className=" w-full px-2 py-1 text-pink-300 bg-pink-50 border border-pink-200 rounded-md outline-none placeholder-pink-300 ">
+                            }} name="description" placeholder="Pet Description" rows="5" className=" w-full px-2 py-1 text-pink-300 bg-pink-50 border border-pink-200 rounded-md outline-none placeholder-pink-300 ">
 
                         </textarea>
                     </div>
@@ -208,7 +208,7 @@ const UpdateProductPage = () => {
                             type='button'
                             className='bg-pink-500 hover:bg-pink-600 w-full text-white text-center py-2 font-bold rounded-md '
                         >
-                            Update Product
+                            Update Pet
                         </button>
                     </div>
                 </div>

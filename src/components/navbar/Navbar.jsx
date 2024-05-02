@@ -21,44 +21,44 @@ const Navbar = () => {
 
     // navList Data
     const navList = (
-        <ul className="flex space-x-3 text-white font-medium text-md px-5 ">
+        <ul className="flex space-x-20  text-black font-bold text-md px-5 ">
             {/* Home */}
-            <li>
+            <li className="hover:text-gray-900">
                 <Link to={'/'}>Home</Link>
             </li>
 
             {/* All Product */}
-            <li>
-                <Link to={'/allproduct'}>All Product</Link>
+            <li className="hover:text-gray-900">
+                <Link to={'/allproduct'}>All Pets</Link>
             </li>
 
             {/* Signup */}
-            {!user ? <li>
+            {!user ? <li className="hover:text-gray-900">
                 <Link to={'/signup'}>Signup</Link>
             </li> : ""}
 
             {/* Signup */}
-            {!user ? <li>
+            {!user ? <li className="hover:text-gray-900">
                 <Link to={'/login'}>Login</Link>
             </li> : ""}
 
             {/* User */}
-            {user?.role === "user" && <li>
+            {user?.role === "user" && <li className="hover:text-gray-900">
                 <Link to={'/user-dashboard'}>User</Link>
             </li>}
 
             {/* Admin */}
-            {user?.role === "admin" && <li>
+            {user?.role === "admin" && <li className="hover:text-gray-900">
                 <Link to={'/admin-dashboard'}>Admin</Link>
             </li>}
 
             {/* logout */}
-            {user && <li className=" cursor-pointer" onClick={logout}>
+            {user && <li className=" cursor-pointer hover:text-gray-900" onClick={logout}>
                 logout
             </li>}
 
             {/* Cart */}
-            <li>
+            <li className="hover:text-gray-900">
                 <Link to={'/cart'}>
                     Cart({cartItems.length})
                 </Link>
@@ -66,13 +66,14 @@ const Navbar = () => {
         </ul>
     )
     return (
-        <nav className="bg-pink-600 sticky top-0">
+        <nav className="bg-gradient-to-r  from-red-800 to-purple-800 sticky top-0">
             {/* main  */}
-            <div className="lg:flex lg:justify-between items-center py-3 lg:px-3 ">
+            <div className="lg:flex  lg:justify-between items-center py-3 lg:px-3 ">
                 {/* left  */}
-                <div className="left py-3 lg:py-0">
-                    <Link to={'/'}>
-                        <h2 className=" font-bold text-white text-2xl text-center">E-Bharat</h2>
+                <div className="flex flex-row justify-between py-3 lg:py-0">
+                    <Link to={'/'} className="flex items-center">
+                        <img src="../img/logo.png" style={{width:"50px"}}/>
+                        <h2 className=" hover:gradient-to-r from-blue-500 to-purple-500 text-black px-3 font-neucha text-2xl text-center">Pawlytics</h2>
                     </Link>
                 </div>
 

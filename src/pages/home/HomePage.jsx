@@ -9,9 +9,9 @@ const HomePage = () => {
     return (
         <Layout>
             <HeroSection/>
-            <Category/>
-            <HomePageProductCard/>
-            <Track/>
+            {/* <Category/> */}
+             <HomePageProductCard/>
+            {/* <Track/> */}
             <Testimonial/>
         </Layout>
     );

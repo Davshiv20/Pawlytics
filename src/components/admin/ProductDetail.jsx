@@ -18,7 +18,7 @@ const ProductDetail = () => {
     const deleteProduct = async (id) => {
         setLoading(true)
         try {
-            await deleteDoc(doc(fireDB, 'products', id))
+            await deleteDoc(doc(fireDB, 'pets', id))
             toast.success('Product Deleted successfully')
             getAllProductFunction();
             setLoading(false)
@@ -31,10 +31,10 @@ const ProductDetail = () => {
         <div>
             <div className="py-5 flex justify-between items-center">
                 {/* text  */}
-                <h1 className=" text-xl text-pink-300 font-bold">All Product</h1>
+                <h1 className=" text-xl text-pink-300 font-bold">All Pets</h1>
                 {/* Add Product Button  */}
                 <Link to={'/addproduct'}>
-                    <button className="px-5 py-2 bg-pink-50 border border-pink-100 rounded-lg">Add Product</button>
+                    <button className="px-5 py-2 bg-pink-50 border border-pink-100 rounded-lg">Add Pets</button>
                 </Link>
             </div>
 
