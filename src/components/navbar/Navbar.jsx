@@ -54,7 +54,7 @@ const Navbar = () => {
 
             {/* logout */}
             {user && <li className=" cursor-pointer hover:text-gray-900" onClick={logout}>
-                logout
+                Logout
             </li>}
 
             {/* Cart */}
@@ -73,7 +73,7 @@ const Navbar = () => {
                 <div className="flex flex-row justify-between py-3 lg:py-0">
                     <Link to={'/'} className="flex items-center">
                         <img src="../img/logo.png" style={{width:"50px"}}/>
-                        <h2 className=" hover:gradient-to-r from-blue-500 to-purple-500 text-black px-3 font-neucha text-2xl text-center">Pawlytics</h2>
+                        <h2 className=" hover:gradient-to-r from-blue-500 to-purple-500 text-black px-3 font-bold font-neucha text-2xl text-center">Pawlytics</h2>
                     </Link>
                 </div>
 
